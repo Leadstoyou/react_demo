@@ -2,6 +2,7 @@ import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 import Purchases from "../../pages/instructor/purchase/PurchasesManagement";
 import ManagePayout from "../../pages/instructor/payout/ManagePayout";
+import { CourseManagement } from "../../pages/instructor/course/CourseManagement";
 
 //import lazy
 const EditUserProfile = lazy(
@@ -41,6 +42,7 @@ const instructorRoutes: RouteObject[] = [
       { path: "reviews/:courseId", element: <ReviewsDetail /> },
       { path: "purchases", element: <Purchases /> },
       { path: "payout", element: <ManagePayout /> },
+      { path: "courses", element: <CourseManagement /> },
       { path: "orders", element: <OrderPage /> },
       { path: "subscription", element: <SubscriptionPage /> },
     ],
